@@ -21,34 +21,19 @@ const routes: Routes = [
     loadChildren: () => import('./pages/menu-pri/menu-pri.module').then( m => m.MenuPriPageModule)
   },
   {
-    path: 'op-disponible',
-    canActivate: [AngularFireAuthGuard], data:{authGuardPipe:redireccionarLogin}, 
-    loadChildren: () => import('./pages/op-disponible/op-disponible.module').then( m => m.OpDisponiblePageModule)
-  },
-  {
-    path: 'op-solicitar',
-    canActivate: [AngularFireAuthGuard], data:{authGuardPipe:redireccionarLogin}, 
-    loadChildren: () => import('./pages/op-solicitar/op-solicitar.module').then( m => m.OpSolicitarPageModule)
-  },
-  {
     path: 'login',
-    
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: ':num2/recuperar',
-    
     loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
   },
   {
     path: ':num/registro',
-    
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
-  
   {
     path: 'pruebas-menu',
-    
     loadChildren: () => import('./pages/pruebas-menu/pruebas-menu.module').then( m => m.PruebasMenuPageModule)
   },
   {
@@ -63,9 +48,14 @@ const routes: Routes = [
   },
   {
     path: 'form-auto',
+    canActivate: [AngularFireAuthGuard], data:{authGuardPipe:redireccionarLogin}, 
     loadChildren: () => import('./modals/form-auto/form-auto.module').then( m => m.FormAutoPageModule)
   },
- 
+  {
+    path: 'info-page',
+    canActivate: [AngularFireAuthGuard], data:{authGuardPipe:redireccionarLogin},
+    loadChildren: () => import('./pages/info-page/info-page.module').then( m => m.InfoPagePageModule)
+  },
 ];
 
 @NgModule({

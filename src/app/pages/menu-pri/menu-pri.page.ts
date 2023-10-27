@@ -45,6 +45,9 @@ export class MenuPriPage implements OnInit {
   perfil() {
     this.router.navigateByUrl('perfil');
   }
+  info() {
+    this.router.navigateByUrl('info-page');
+  }
 
   cerrarMenu() {
     this.menuCtrl.close();
@@ -103,9 +106,6 @@ export class MenuPriPage implements OnInit {
     destinoInput.value = '';
     costoInput.value = '';
   }
-  
-  
-  
 
   async dispositivo() {
     const loader = await this.helper.showLoading("Cargando");

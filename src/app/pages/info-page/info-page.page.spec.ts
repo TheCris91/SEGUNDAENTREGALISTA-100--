@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { OpDisponiblePage } from './op-disponible.page';
+import { InfoPagePage } from './info-page.page';
 
-describe('OpDisponiblePage', () => {
-  let component: OpDisponiblePage;
-  let fixture: ComponentFixture<OpDisponiblePage>;
+describe('InfoPagePage', () => {
+  let component: InfoPagePage;
+  let fixture: ComponentFixture<InfoPagePage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(OpDisponiblePage);
+    fixture = TestBed.createComponent(InfoPagePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

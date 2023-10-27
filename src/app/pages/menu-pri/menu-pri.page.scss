@@ -106,8 +106,6 @@ ion-title{
     animation: fadeIn 1s ease-in;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #00d262;
-    
-   
 }
   
 #Solicitar{
@@ -115,14 +113,12 @@ ion-title{
     background:  linear-gradient(270deg, rgb(81, 45, 168), rgb(108, 69, 209)) !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
-    
-   
 }
 
 ion-header{
     animation: fadeIn 1s ease-in;
 }
-
+/* inicio del info  */
 #quienSomo{
     text-align: center;
 }
@@ -131,11 +127,6 @@ ion-header{
 .item{
     background-color: black;
 }
-
-
- 
-
-
 
 .lin53{
     margin: 12px;
@@ -204,7 +195,8 @@ ion-card {
       --background: green;
     }
   }
-  
+
+  /* fin del info */
 
   .ola{
     width: 100px;

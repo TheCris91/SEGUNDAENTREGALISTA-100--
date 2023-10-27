@@ -28,10 +28,14 @@ export class RecuperarPage implements OnInit {
     this.route.navigateByUrl("login")
   }
   async enviCorr() {
+    const loader = await this.helperService.showLoading("Cargando");
+  
     if (this.userEmail.invalid) {
       this.helperService.showAlert('Por favor, ingresa un correo.', 'Error');
+      loader.dismiss(); // Cierra el loader en caso de error.
       return;
     }
+    
     const email = this.userEmail.value;
     if (email !== null && typeof email === 'string') {
       try {
@@ -40,9 +44,12 @@ export class RecuperarPage implements OnInit {
         this.route.navigateByUrl('login');
       } catch (error) {
         this.helperService.showAlert('No se pudo enviar el correo. Verifica la dirección de correo electrónico.', 'Error');
+      } finally {
+        loader.dismiss(); // Asegúrate de cerrar el loader en caso de éxito o error.
       }
     } else {
       this.helperService.showAlert('La dirección de correo electrónico no es válida.', 'Error');
+      loader.dismiss(); // Cierra el loader en caso de dirección de correo no válida.
     }
-  }  
+  }
   }

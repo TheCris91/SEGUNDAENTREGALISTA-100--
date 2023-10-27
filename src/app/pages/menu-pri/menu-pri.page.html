@@ -75,8 +75,28 @@
       </ion-grid>
     </div>
 
-    
-
+    <!-- intento de manu bajo -->
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="modal()">
+          <ion-icon style="color: rgb(14, 136, 136);" name="car-sport-outline"></ion-icon>
+          Disponibilidad
+        </ion-tab-button>
+        <ion-tab-button (click)="setOpen(true)">
+          <ion-icon style="color: rgb(14, 136, 136);" name="map-outline"></ion-icon>
+          Solicitar
+        </ion-tab-button>
+        <ion-tab-button (click)="info()">
+          <ion-icon style="color: rgb(14, 136, 136);" name="information-circle-outline"></ion-icon>
+          informacion
+        </ion-tab-button>
+        <!--<ion-tab-button tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button> -->
+      </ion-tab-bar>
+    </ion-tabs>
+    <!-- fin de menu bajo  -->
     
     <div class="opc1">
       <ion-grid >
@@ -154,32 +174,5 @@
     </ion-modal>
 
     <!-- informacion de inicio -->
-
-    <ion-row class="lin52">
-      <ion-col class="lin53">
-        <h3 class="lin54"><span id="tellevoApp">TeLlevoApp</span> es una solución a los estudiantes del 
-          instituto <span id="duoc">Duoc</span><span id="uc">UC</span> que no poseen movilización</h3>
-          <h5 id="lin56">TeLlevoAPP capaz de ser utilizada en plataformas tanto como Android e iOS que permita que los alumnos se
-            organicen a través de la App para que puedan retornar a sus hogares utilizando vehículos de algunos alumnos que si tienen
-            movilización propia. </h5>
-      </ion-col>
-    </ion-row>
     
-    <ion-footer >
-    <ion-toolbar class="footer" color="dark"> 
-        <ion-row >
-          <ion-col id="pintarFooter" size="12">
-            <h3>TeLlevoApp</h3>
-            <p>Tu solución de transporte confiable.</p>
-          </ion-col>
-
-          <ion-col id="pintarFooter" size="12">
-            <h3>Contacto</h3>
-            <p>Dirección: Duoc UC San Joaquin</p>
-            <p>Teléfono: (123) 456-7890</p>
-            <p>Email: info@tellevoapp.com</p>
-          </ion-col>
-        </ion-row>
-      </ion-toolbar> 
-    </ion-footer>
 </ion-content>
