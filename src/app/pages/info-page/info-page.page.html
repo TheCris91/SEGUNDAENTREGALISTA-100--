@@ -9,13 +9,21 @@
 
 <ion-content [fullscreen]="true">
   <ion-row class="lin52">
-    <ion-col class="lin53">
+    <ion-col class="lin53" id="Disponible">
       <h3 class="lin54"><span id="tellevoApp">TeLlevoApp</span> es una solución a los estudiantes del 
         instituto <span id="duoc">Duoc</span><span id="uc">UC</span> que no poseen movilización</h3>
         <h5 id="lin56">TeLlevoAPP capaz de ser utilizada en plataformas tanto como Android e iOS que permita que los alumnos se
           organicen a través de la App para que puedan retornar a sus hogares utilizando vehículos de algunos alumnos que si tienen
           movilización propia. </h5>
     </ion-col>
+    <ion-row>
+      <ion-col >
+        <button id="iniciar" (click)="play()"  expand="block">Play</button>
+      </ion-col>
+      <ion-col >
+        <button id="Solicitar" (click)="stop()"  expand="block">Stop</button>
+      </ion-col>
+    </ion-row> 
   </ion-row>
   
   <ion-footer>

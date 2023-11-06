@@ -115,27 +115,10 @@ export class MenuPriPage implements OnInit {
     await loader.dismiss();
   }
 
-  ngAfterViewInit() {
-    this.animation = this.animationCtrl
-      .create()
-      .addElement(document.querySelectorAll("#Disponible",))
-      .duration(1500)
-      .iterations(Infinity)
-      .direction('alternate')
-      .fromTo('background', 'blue', 'var(--background)');
-  }
-
   async viewUser() {
     //console.log("USUARIOS REGISTRADOS", await this.storageService.obtenerUser());
   }
 
-  play() {
-    this.animation.play();
-  }
-
-  stop() {
-    this.animation.stop();
-  }
 
   opDisponible() {
     this.router.navigateByUrl("/op-disponible");

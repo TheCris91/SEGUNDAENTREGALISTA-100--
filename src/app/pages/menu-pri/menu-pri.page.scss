@@ -20,13 +20,6 @@
   padding-left: 10px;
 }
 
-#Disponible{
-    margin-top: 20px;
-}
-
-#Solicitar{
-    margin-top: 20px;
-}
 .maps{
     margin-left: 10px;
     margin-right: 10px;
@@ -84,40 +77,6 @@ ion-title{
     margin-top: 100px;
 }
   
-
-//ANIMACIONES
-
-/* Estilo para la animación de desvanecimiento */
-.animated-fade-in {
-    animation: fadeIn 1.5s ease-in;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-
-#Disponible{
-    animation: fadeIn 1s ease-in;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #00d262;
-}
-  
-#Solicitar{
-    animation: fadeIn 1s ease-in;
-    background:  linear-gradient(270deg, rgb(81, 45, 168), rgb(108, 69, 209)) !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
-}
-
-ion-header{
-    animation: fadeIn 1s ease-in;
-}
 /* inicio del info  */
 #quienSomo{
     text-align: center;
@@ -203,11 +162,7 @@ ion-card {
     height: 100px;
   }
 
-  button{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-  }
+
 
   .opc1{
     

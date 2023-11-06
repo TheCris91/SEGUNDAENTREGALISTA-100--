@@ -7,13 +7,6 @@
     background-color: black;
 }
 
-.lin53{
-    margin: 12px;
-    background: radial-gradient(100% 162.87% at 0 0,#00b354 0,#00d262 100%);
-
-
-}
-
 .lin54{
     text-align: justify;
     margin: 14px;
@@ -72,3 +65,52 @@ ion-card {
     --background: green;
     }
 }
+
+/* animacio */
+/* Estilo para la animación de desvanecimiento */
+.animated-fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+#Disponible{
+    margin: 12px;
+    animation: fadeIn 1s ease-in;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e7047;
+    margin-top: 20px;
+}
+
+#Solicitar{
+    animation: fadeIn 1s ease-in;
+    background:  linear-gradient(270deg, rgb(168, 59, 45), rgb(54, 39, 88)) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#iniciar{
+    animation: fadeIn 1s ease-in;
+    background:  linear-gradient(270deg, rgb(168, 59, 45), rgb(54, 39, 88)) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ion-header{
+    animation: fadeIn 1s ease-in;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+    /* fin */
