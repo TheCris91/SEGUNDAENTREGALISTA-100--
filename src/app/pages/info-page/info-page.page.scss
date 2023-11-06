@@ -8,14 +8,15 @@
 }
 
 .lin54{
-    text-align: justify;
-    margin: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //text-align: justify;
+    //margin: 14px;
+    
+    font-size: medium;
     color: white;
 }
 
 #tellevoApp{
-    
+    font-family: 'mifuente', sans-serif;
     color:  rgb(81, 45, 168);
     
 }
@@ -40,6 +41,9 @@
     margin: 10px;
 }
 
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .lin52{
     animation: fadeIn 1s ease-in;
@@ -66,6 +70,20 @@ ion-card {
     }
 }
 
+
+@font-face {
+    font-family: 'mifuente';
+    src: url(/assets/fonts/LEMONMILK-Regular.otf) format('truetype');
+    
+  }
+
+body {
+        font-family: 'mifuente', sans-serif;
+    }
+
+#lin6{
+    font-family: 'mifuente', sans-serif;
+}
 /* animacio */
 /* Estilo para la animación de desvanecimiento */
 .animated-fade-in {
@@ -85,7 +103,7 @@ ion-card {
     margin: 12px;
     animation: fadeIn 1s ease-in;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2e7047;
+    background: linear-gradient(to right, #009929, #5ccb5f);
     margin-top: 20px;
 }
 

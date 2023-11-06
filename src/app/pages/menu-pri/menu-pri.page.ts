@@ -45,10 +45,15 @@ export class MenuPriPage implements OnInit {
   perfil() {
     this.router.navigateByUrl('perfil');
   }
+
+  pero(){
+    this.router.navigateByUrl('info-page');
+    
+  }
   info() {
     this.router.navigateByUrl('info-page');
   }
-
+  
   cerrarMenu() {
     this.menuCtrl.close();
   }
@@ -111,21 +116,15 @@ export class MenuPriPage implements OnInit {
     const loader = await this.helper.showLoading("Cargando");
     const device = await Device.getInfo();
     //console.log("Información", device);
-    await this.helper.showToast("Su dispositivo es: " + device.model);
+    await this.helper.showToast("Su dispositivo es: " + device.model, 500);
     await loader.dismiss();
   }
+
 
   async viewUser() {
     //console.log("USUARIOS REGISTRADOS", await this.storageService.obtenerUser());
   }
 
-
-  opDisponible() {
-    this.router.navigateByUrl("/op-disponible");
-  }
-  opSolicitar() {
-    this.router.navigateByUrl("/op-solicitar");
-  }
   async logOut() {
     var confirmar = await this.helper.showConfirm("Desea cerrar la sesión actual?", "Confirmar", "Cancelar");
 

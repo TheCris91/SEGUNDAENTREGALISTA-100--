@@ -73,16 +73,18 @@ export class HelperService {
     return promise;
   }
 
-
-
-  async showLoading(msg:string){
-    var loader = await this.loadingController.create(
-      {
-        cssClass:"loaderCss",message:msg,translucent:true
-      });
+  async showLoading(msg: string, duration: number = 2000) {
+    const loader = await this.loadingController.create({
+      cssClass: "loaderCss",
+      message: msg,
+      translucent: true,
+      duration: duration // Aquí estableces la duración en milisegundos
+    });
+  
     await loader.present();
     return loader;
   }
+  
 
   async showModal(componente:any,props:any={},dismiss = false){
     var modal = await this.modalController.create({

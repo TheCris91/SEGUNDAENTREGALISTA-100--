@@ -1,11 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-icon (click)="close()" slot="end" name="close-outline"></ion-icon> 
-    <ion-title>informacion</ion-title>
+    <ion-title id="lin4">Disponibilidad</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
+
+  <ion-card>
+    <ion-card-content>
+      <ion-icon class="taxiIcon" name="car"></ion-icon>
+      <h2 id="lin11">Bienvenido a nuestra página de disponibilidad de autos</h2>
+      <p id="lin12">Aquí puedes agregar y administrar información sobre los autos disponibles.</p>
+      <ion-button expand="block" id="lin42" (click)="formAuto()" (click)="close()" color="success">Agregar Auto</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  
+
   <ion-card *ngFor="let i of dataModal">
   
     <ion-item *ngIf="i.modelo">
@@ -37,10 +49,7 @@
     
     
     </ion-card> 
-    
-  
-      <ion-button expand="block" (click)="formAuto()" (click)="close()" color="success" >Agregar Auto</ion-button> 
-      <!-- <ion-button expand="block" (click)="eliminarAuto()" color="success">eliminar auto</ion-button> -->
-    <!-- si funciona solo que borra el local storage entero :( -->
+   
+     
   
 </ion-content>

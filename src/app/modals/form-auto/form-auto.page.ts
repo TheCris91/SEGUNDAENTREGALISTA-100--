@@ -29,7 +29,7 @@ export class FormAutoPage implements OnInit {
       const imagenURL = URL.createObjectURL(imagen);
       this.imagenService.setImagenSeleccionadaURL(imagenURL);
     }
-  }*/
+  }
   imagenSeleccionada: boolean = false;
 
   seleccionarImagen(event: Event) {
@@ -40,10 +40,7 @@ export class FormAutoPage implements OnInit {
       this.imagenSeleccionadaURL = imagenURL;
       this.imagenSeleccionada = true;
     }
-  }
-
-
- 
+  }*/
 
   guardarAuto() {
     const patenteInput = document.getElementById('Patente') as HTMLIonInputElement;
@@ -58,10 +55,7 @@ export class FormAutoPage implements OnInit {
     const modelo = modeloInput.value;
     const marca = marcaInput.value;
     const color = colorInput.value;
-    
-   
-  
-  
+
     if (!patente || !pato || !modelo || !marca || !color) {
       this.helperService.showAlert('Por favor, complete todos los campos.', 'Error');
       return;
@@ -91,26 +85,20 @@ export class FormAutoPage implements OnInit {
       this.helperService.showAlert('El color debe tener entre 3 y 40 caracteres.', 'Error');
       return;
     }
-    if (!this.imagenSeleccionada) {
+    /*if (!this.imagenSeleccionada) {
       this.helperService.showAlert('Por favor, suba una imagen del automóvil.', 'Error');
       return;
-    }
-    
-    
-    
-  
+    }*/
+
     const auto = {
       patente: patente,
       modelo: modelo,
       marca: marca,
       pato: pato,
       color: color,
-      imagenURL: this.imagenSeleccionadaURL,
+      /*imagenURL: this.imagenSeleccionadaURL,*/
       
     };
-  
-   
-
 
     // Guardar el automóvil en el almacenamiento
     localStorage.setItem('auto', JSON.stringify(auto));
@@ -124,7 +112,7 @@ export class FormAutoPage implements OnInit {
     modeloInput.value = '';
     marcaInput.value = '';
     colorInput.value = '';
-    this.imagenSeleccionadaURL = '';
+    /*this.imagenSeleccionadaURL = '';*/
   }
   
 }
