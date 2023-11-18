@@ -33,10 +33,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
-    path: 'pruebas-menu',
-    loadChildren: () => import('./pages/pruebas-menu/pruebas-menu.module').then( m => m.PruebasMenuPageModule)
-  },
-  {
     path: 'informacion',
     canActivate: [AngularFireAuthGuard], data:{authGuardPipe:redireccionarLogin}, 
     loadChildren: () => import('./modals/informacion/informacion.module').then( m => m.InformacionPageModule)

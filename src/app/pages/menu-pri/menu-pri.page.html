@@ -1,17 +1,16 @@
 
-<ion-header [translucent]="true" >
-  <ion-toolbar>
-    
 
-    <div class="ion-page" id="main-content"> 
-      <ion-icon class="menu" (click)="toggle()" slot="start" name="menu-outline"></ion-icon>
-      <ion-title>
-        <ion-row>
+
+<ion-header >
+  <ion-toolbar>
+      <ion-icon id="lin7" name="menu-outline" (click)="toggle()" slot="start"></ion-icon>
+
+     
+         <ion-row>                       
         <h1 id="teLlevo">TeLlevoApp</h1><ion-icon class="taxiIcon" name="car-sport-outline"></ion-icon>
-        </ion-row>
-      </ion-title>  
-    </div>
+        </ion-row>       
   </ion-toolbar>
+ 
 </ion-header>
 
 
@@ -22,6 +21,7 @@
       <ion-title id="lin23">Menú</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-content scrollY="false">
 
     <ion-list>
@@ -59,7 +59,7 @@
 
 
 <ion-content [fullscreen]="true" class="animated-content">
-  
+
   
   <h1 id="lin64">Maneja con TeLlevoApp</h1>
   <ion-icon id="chekitem" name="checkmark-done-outline"></ion-icon>
@@ -91,7 +91,7 @@
     
     <!-- botones -->
     <div class="opc1">
-      <ion-button id="lin68" color="light" (click)="pero()">Mas Información</ion-button>
+      <ion-button id="lin68" color="light" (click)="pero()" > Mas Información</ion-button>
     </div>
     <!-- botones del menu-pri -->
     <ion-card class="custom-card">
@@ -119,7 +119,7 @@
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
-        <ion-content [fullscreen]="true">
+        <ion-content>
           <ion-item>
             <ion-input id="Origen" label="Origen:" placeholder="DuocUc sede San Joaquin" required></ion-input>
           </ion-item>
@@ -131,8 +131,10 @@
           </ion-item>
           <ion-item>
             <ion-header>
+            <ion-toolbar>
               <ion-title id="lin138">Metodos de pago</ion-title>
-            </ion-header>
+            </ion-toolbar>
+          </ion-header>
           </ion-item>
           <ion-radio-group [(ngModel)]="radioBut" value="strawberries">
             <ion-item>
@@ -169,6 +171,9 @@
       </ng-template>
     </ion-modal>
 
+
     <!-- informacion de inicio -->
-    
+  
 </ion-content>
+
+

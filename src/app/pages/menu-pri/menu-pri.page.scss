@@ -29,14 +29,18 @@ ion-icon{
 ion-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+ #lin7{
+  padding-left: 10px;
+ }
 
 #teLlevo{
-  font-size: larger;
-  padding-left: 40px;
-  margin-bottom: 10px;
+   font-size: larger;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   font-family: 'mifuente', sans-serif;
-  color: rgb(61, 61, 61);
+  color: rgb(61, 61, 61); 
+  
     
 
 }
@@ -44,7 +48,7 @@ ion-title{
 .taxiIcon{
     font-size: 35px;
     margin-top: 13px;
-    padding-left: 5px;
+    padding-right: 20px;
     color: rgb(96, 188, 89);
 }
 
@@ -94,16 +98,19 @@ ion-header{
   #lin81{
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: xx-small;
   }
 
   #lin85{
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: xx-small;
   }
 
   #lin89{
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: xx-small;
   }
 
 ion-tab-button{
@@ -139,8 +146,14 @@ h2{
 
 #main-content {
   background-color: rgb(255, 255, 255); 
+  
 }
 
+#lin9{
+  height: 10%; /* O ajusta la altura según tus necesidades */
+  width: 15%;  /* O ajusta el ancho según tus necesidades */
+
+}
 .animated-content{
   --background: linear-gradient(to right, #009929, #5ccb5f);
 }
@@ -165,18 +178,21 @@ h2{
 
 #lin68 {
   margin-top: 20px;
-  padding-left: 10px;
+  margin-left: 22px;
+  color: gray;
   border-radius: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
   color: black;
   font-size: large;
-  width:340px; /* Ajusta el valor según el ancho deseado */
+  width:80%;  
+  
 }
 
 #chekitem{
   color: white;
   font-size: 40px;
-  padding-left: 180px;
+  padding-left: 170px;
   margin-top: 10px;
 }
 .button-container {
